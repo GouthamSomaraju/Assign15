@@ -1,0 +1,286 @@
+ 
+   /* Html variables */
+   :root{
+    --bgcolor:white;
+    --textcolor:black;
+    --borderclr:rgb(131, 130, 130);
+    --fill:black;
+    --btnbackclr:rgb(232, 226, 226);
+    --btntxtclr:black;
+    --btnhvrtxt:black;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bgcolor:black;
+      --textcolor:white;
+      --fill:white;
+      --borderclr:rgb(93, 92, 92);
+      --btnbackclr:rgb(93, 92, 92);
+      --btntxtclr:white;
+
+
+    }
+  }
+
+
+  /* main container div to bring to center */
+  .main_container {
+    width: 500px;
+    height: 100vh;
+    border-radius: 10px;
+    border: 2px solid rgb(113, 113, 113);
+    color: var(--textcolor);
+    background-color: var(--bgcolor);
+    display: grid;
+    margin-left: 30%;
+  }
+
+  /* header div  styling*/
+  .heding{
+    width: 500px;
+    height: 10vh;
+    /* padding: 1px; */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*Mr Goutham--username styling */
+  .username{
+    padding-left: 10px;
+  }
+
+  /* header svg icons styling */
+  .headicon{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* hover property for headicon */
+  .headicon:hover{
+    transform: scale(1.3);
+    opacity: 0.6;
+    /* color: rgb(214, 33, 33); */
+  }
+
+  /* SunMoon svg icon Coloring*/
+  .dark{
+    fill: var(--fill);
+  }
+  /* Addpost svg icon Coloring*/
+  .post{
+    stroke: var(--fill);
+  }
+  /* Menu--3lines svg icon Coloring*/
+  .three{
+    fill: var(--fill);
+  }
+  
+  /* middle content styling */
+  .scrollover {
+    width: 500px;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+
+  /* profile and follower, following div styling */
+  .profilefollowers{
+    width: 500px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+  }
+
+  /* Profilepic --<img> tag Styling */
+  .profilepic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid rgb(235, 120, 183);
+  }
+  /* hover property for profilepic */
+  .profilepic:hover{
+    transform: scale(1.1);
+  }
+  /*Posts(100), Followers(1000), and Following(1004)--<p> tag Styling  */
+  .profile{
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  /* bio div styling */
+  .bio{
+    width: 500px;
+    padding-left: 10px;
+    font-family: sans-serif;
+  }
+  /* Name Mr Goutham --<p> tag Styling */
+  .name{
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+  /* Designer */
+  .designation{
+    color: rgb(95, 94, 94);
+  }
+  /* firstline of bio(👨‍💻 Full-stack...) --<p>tag styling */
+  .business{
+    margin-top: 7px;
+  }
+  /* to reduce gap btw <p>tag lines in bio */
+  p{
+    margin: 0%;
+  }
+  /* ...more */
+  .more{
+    color: rgb(98, 97, 97);
+  }
+  /* ...more hover styling */
+  .more:hover{
+    color: rgb(147, 147, 147);
+  }
+  /*onclick on more style  */
+  .more:active+.toggle{
+    display: block;
+    color: black;
+  }
+  .more:active{
+    color: aquamarine;
+  }
+  /*for toggle styling */
+  .toggle{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    display: none;
+  }
+
+  /*styling for <a>tag (Linkedin)  */
+  a{
+    color: rgb(98, 97, 97);
+    text-decoration: none;
+    display: block;
+  }
+  /* hover property for   <a>tag (Linkedin)*/
+    a:hover{
+      color: rgb(147, 147, 147);
+    }
+  /* edit & share profile buttons styling */
+  .button{
+    width: 500px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* Edit & Share Profile --<button>tag styling */
+  button{
+    padding: 5px 20px;
+    width: 240px;
+    cursor: pointer;
+    margin-top: 10px; 
+    border: 1px solid rgb(146, 145, 145);
+    /* border: 50%;  */
+    color: var(--btntxtclr);
+    border-radius: 6px;  
+    background-color: var(--btnbackclr); /*rgb(181, 181, 181);    */
+  }
+  /* button1 hover style */
+  .button1:hover{
+    background-color: rgb(227, 226, 226);
+    color: var(--btnhvrtxt);
+  }
+  /* highlights div styling */
+  .highlights{
+    width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+  }
+  /* highlights div --<img>tag styling  */
+  .high{
+    width: 50px; 
+    height: 50px;
+    margin: 5px;
+    border: 2px solid var(--borderclr);
+    padding: 2px;
+    border-radius: 50%;      
+  }
+  .high:hover{
+    transform: scale(1.1);
+  }
+  /* post,reel,tag div --elements to get in single row-- styling */
+  .postreel{
+    width: 500px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /*post,reel,tag div's elements style --<img>tag styling  */
+  .ps{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    fill: var(--fill);
+  }
+  .phots{
+    width: 500px;
+  }
+  /* post's div --<img>tag styling */
+  .photos{
+    width: 164px;
+    height: 164px;
+  }
+
+
+  /*Footer div Home search add reels profile icon's --<img>tag styling */
+  .footer{
+    width: 500px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* Footer divs --<svg>tag styling */
+  .footerimg{
+    width: 30px;
+    height: 30px;
+    fill: var(--fill);
+  }
+  /*Footer divs --<svg>tag (Home icon) styling   */
+  .home{
+    stroke: var(--fill);
+  }
+  /*Footer divs --<svg>tag (search icon) styling   */
+  .search{
+    width: 25px;
+    fill: var(--fill);     
+  }   
+  /* footerimg hover style */
+  .footerimg:hover{
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+  /* Footer divs --<img>tag --profile icon styling */
+  .prof{
+    width: 30px;
+    height:30px;
+    border: 1px solid var(--borderclr);
+    border-radius: 50%;
+  }
