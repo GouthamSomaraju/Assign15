@@ -200,6 +200,7 @@
   }
   /* button1 hover style */
   .button1:hover{
+    transform: scale(1.03);
     background-color: rgb(227, 226, 226);
     color: var(--btnhvrtxt);
   }
@@ -239,6 +240,11 @@
     cursor: pointer;
     fill: var(--fill);
   }
+  .ps:hover{
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+  /* photos total width */
   .phots{
     width: 500px;
   }
