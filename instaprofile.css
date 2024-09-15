@@ -253,6 +253,9 @@
     width: 164px;
     height: 164px;
   }
+  .photos:hover{
+    transform: scale(1.01);
+  }
 
 
   /*Footer div Home search add reels profile icon's --<img>tag styling */
